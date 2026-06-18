@@ -8,9 +8,13 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::post('/register', [VehicleController::class, 'register']);
+Route::post('/register',     [VehicleController::class, 'register']);
 Route::post('/authenticate', [VehicleController::class, 'authenticate']);
-Route::post('/localize', [VehicleController::class, 'localize']);
+Route::post('/localize',     [VehicleController::class, 'localize']);
+
+Route::get('/rsus', function () {
+    return response()->json(\App\Models\Rsu::select('rsu_uid', 'latitude', 'longitude', 'tx_power')->get());
+});
 
 Route::post('/log-metrics', function (\Illuminate\Http\Request $request) {
     $metrics = $request->input('metrics');
