@@ -16,7 +16,9 @@ This repository contains the backend simulation implementation for the paper:
 ---
 
 <p align="center">
-  <video src="public/simulator.mp4" width="100%" autoplay muted loop playsinline></video>
+  <a href="public/simulator.mp4">
+    <img src="public/simulator.webp" width="100%" alt="Simulator Demo (Click to watch/download original MP4)">
+  </a>
 </p>
 
 ## Overview
