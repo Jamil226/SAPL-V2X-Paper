@@ -2,6 +2,10 @@
 
 This repository contains the backend simulation implementation for the SAPL-V2X paper. It is built using Laravel 12 and provides API endpoints for cryptographic authentication, multilateration-based localization, and differential privacy filtering.
 
+<p align="center">
+  <video src="public/simulator.mp4" width="100%" autoplay muted loop playsinline></video>
+</p>
+
 ## Overview
 
 The simulation handles the following key functionalities:
